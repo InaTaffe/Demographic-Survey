@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<html>
+<head>
+    <title>
+        Survey
+    </title>
+    <link href="https://fonts.googleapis.com/css?family=Handlee&display=swap" rel="stylesheet">
+        
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu+Mono&display=swap" rel="stylesheet">
+        
+    <link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah&display=swap" rel="stylesheet">
+        
+    <link href="https://fonts.googleapis.com/css?              family=Montserrat" rel="stylesheet">
+        
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="css/index.css"
+        
+</head>
+<body></body>
+
+<header>
+    <h1 id="title">Demographic Survey</h1>
+</header>
+<div id="page">
+
+    <p id="description">Please fill this form for a great research!</p>
+
+    <form action="/" id="survey-form">
+        <div class="text-dropdown-container">
+            <label for="name" class="text-dropdown-label" id="name-label">Name:</label>
+            <input placeholder="Name" type="text" class="text-dropdown-input" id="name" required>
+        </div>
+
+        <div class="text-dropdown-container">
+            <label for="email" class="text-dropdown-label" id="email-label">E-mail:</label>
+            <input name="mail" placeholder="E-mail" type="email" class="text-dropdown-input" id="email" required>
+        </div>
+
+
+        <div class="text-dropdown-container">
+            <label for="number" class="text-dropdown-label" id="number-label">Age:</label>
+            <input name="age" placeholder="40" type="number" class="text-dropdown-input" id="number" min="18" max="100">
+        </div>
+
+        <div class="text-dropdown-container">
+            <label for="dropdown" class="text-dropdown-label" id="dropdown-label">Education:</label>
+
+            <select class="text-dropdown-input" id="dropdown">
+                <option value="select"> Select education</option>
+                <option value="Less than high school"> Less than high school</option>
+                <option value="high school"> High school</option>
+                <option value="College"> College</option>
+            </select>
+
+        </div>
+
+        <div class="text-dropdown-container">
+            <label for="dropdown" class="text-dropdown-label" id="dropdown-lable2">Gender:</label>
+
+            <select class="text-dropdown-input" id="dropdown2">
+                <option value="blank"> Select gender</option>
+                <option value="gender"> Male</option>
+                <option value="gender2"> Female</option>
+            </select>
+        </div>
+
+        <div class="radio-checkbox-container">
+            <p class="radio-checkbox-label">What would best describe you?</p>
+
+            <div class="radio-checkbox-input">
+                <input type="radio" class="radio" id="african" name="radio-name" value="African">
+
+                <label for="african" class="label">African</label><br />
+
+                <input type="radio" class="radio" id="asian" name="radio-name" value="Asian">
+
+                <label for="asian" class="label">Asian</label><br />
+
+                <input type="radio" class="radio" id="european" name="radio-name" value="European">
+
+                <label for="european" class="label">European</label><br />
+
+                <input type="radio" class="radio" id="american" name="radio-name" value="American">
+
+                <label for="american" class="label">American</label><br />
+
+                <input type="radio" class="radio" id="others" name="radio-name" value="others" checked>
+
+                <label for="others" class="label">Others</label><br />
+            </div>
+        </div>
+
+        <div class="radio-checkbox-container">
+            <p class="radio-checkbox-label">Interests:</p>
+
+            <div class="radio-checkbox-input">
+
+                <input type="checkbox" id="business" value="business">
+
+                <label for="business">Business</label><br />
+
+                <input type="checkbox" id="education" value="education">
+
+                <label for="education">Education</label><br />
+
+                <input type="checkbox" id="healthcare" value="healthcare">
+
+                <label for="healthcare">Healthcare</label><br />
+
+                <input type="checkbox" id="webdev" value="webdev">
+
+                <label for="webdev">Web developement</label><br />
+
+                <input type="checkbox" id="marketing" value="marketing">
+
+                <label for="marketing">Marketing</label><br />
+
+                <input type="checkbox" id="advertising" value="add">
+
+                <label for="advertising">Advertising</label><br />
+            </div>
+        </div>
+
+        <div class="textarea-container">
+            <p id="textarea-label">Additional comments:</p>
+
+            <textarea id="textarea"></textarea>
+        </div>
+
+        <input type="submit" id="submit" value="submit">
+
+    </form>
+
+
+</div>
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
+</html>
